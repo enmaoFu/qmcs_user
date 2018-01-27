@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenientBanner"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:canLoop="true"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/transfer_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:paddingTop="@dimen/size_12p"
+        android:orientation="horizontal"
+        android:background="#8affffff"
+        >
+
+        <RelativeLayout
+            android:id="@+id/trip"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/transfer_re_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/transfer_trip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8p"
+                    android:text="发布行程"
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_trip_title"
+                    android:layout_marginLeft="@dimen/size_8p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:text="精准匹配传送单"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_text_size12"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_8p"
+                android:src="@drawable/icon_publish"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rob"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/size_10p"
+            android:layout_weight="1"
+            android:background="@drawable/transfer_re_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/transfer_rob_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8p"
+                    android:text="传送抢单"
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_rob_title"
+                    android:layout_marginLeft="@dimen/size_8p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:text="智能筛选传送单"
+                    android:textSize="@dimen/font_text_size12"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_8p"
+                android:src="@drawable/icon_order"
+                android:textColor="@color/font_gray"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_trip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40p"
+        android:background="@drawable/normal_white_pressed_gray">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/size_12p"
+            android:text="我的行程"
+            android:textColor="@color/font_black333"/>
+
+        <TextView
+            android:id="@+id/my_trip_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_12p"
+            android:drawablePadding="@dimen/size_4p"
+            android:drawableRight="@drawable/icon_check1"
+            android:text="查看更多"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_text_size12"/>
+
+    </RelativeLayout>
+
+    <com.and.yzy.frame.view.listview.ListViewForScrollView
+        android:id="@+id/my_trip_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font_text_size12"
+        android:layout_marginRight="@dimen/font_text_size12"
+        android:divider="@color/app_bg"
+        android:dividerHeight="@dimen/size_10p"
+        android:footerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="@dimen/size_10p"
+        android:paddingTop="@dimen/size_10p">
+    </com.and.yzy.frame.view.listview.ListViewForScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_rob_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40p"
+        android:background="@drawable/normal_white_pressed_gray">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:text="最新传送单"
+            android:textColor="@color/font_black333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_12p"
+            android:drawablePadding="@dimen/size_4p"
+            android:drawableRight="@drawable/icon_check1"
+            android:text="查看更多"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_text_size12"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_nodata"/>
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_data"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_text_size14"/>
+    </LinearLayout>
+</LinearLayout>

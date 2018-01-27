@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20p">
+
+        <ImageView
+            android:id="@+id/guide_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_20p"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/guide_arrow"/>
+
+        <ImageView
+            android:id="@+id/img_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guide_arrow"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/guide_notice"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/img_go"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_toRightOf="@id/img_go"
+            android:src="@drawable/guide_lamp"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:id="@+id/img_dismiss"
+        android:src="@drawable/guide_konw"
+        />
+
+
+</LinearLayout>

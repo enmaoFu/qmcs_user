@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--w我的传送 单间丢失 单件破损-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快件码"
+                    android:textColor="@color/font_black333"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/tv_code"
+                    android:text="QMCS 234 3523 3432"
+                    android:textColor="@color/font_gray"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="-1dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_12p">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list_style"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:background="@color/divier_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="异常类型"
+                        android:textColor="@color/font_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="目的网点未检测到该快件"
+                        android:textColor="@color/font_red"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="-1dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_5p"
+                android:background="@color/white"
+                android:padding="@dimen/size_12p"
+                android:text="快件详情"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_1p"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/size_12p"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:text="接单时间：2017.09.08. 15:00"
+                    android:textColor="@color/font_gray"
+                    android:id="@+id/tv_take_time"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:text="送达时间：2017.08.09 17:00"
+                    android:textColor="@color/font_gray"
+                    android:id="@+id/tv_send_time"
+                    />
+
+
+                <TextView
+                    android:id="@+id/order_dot_msg_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12p"
+                    android:drawableLeft="@drawable/detail_site"
+                    android:drawablePadding="@dimen/size_4p"
+                    android:gravity="center"
+                    android:text="网点信息"
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size16"/>
+
+                <LinearLayout
+                    android:id="@+id/take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="@dimen/size_10p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="取件网点:"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:singleLine="false"
+                        android:text="重庆市南岸区南坪街道网点"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/take_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_10p"
+                        android:drawablePadding="@dimen/size_10p"
+                        android:drawableRight="@drawable/detail_phone"
+                        android:gravity="center_vertical"
+                        android:text="023-11123597"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_start_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="网点地址"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_10p"
+                        android:drawablePadding="@dimen/size_20p"
+                        android:drawableRight="@drawable/detail_location"
+                        android:text="重庆市南岸区南坪街道网点阿萨德撒啊实打实"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_diver01"
+                    style="@style/divier_style"
+                    android:layout_marginBottom="@dimen/size_10p"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginRight="@dimen/size_10p"
+                    android:layout_marginTop="@dimen/size_10p"
+
+                    />
+
+                <LinearLayout
+
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="目的网点:"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:singleLine="false"
+                        android:text="重庆市南岸区南坪街道网点"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/send_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_10p"
+                        android:drawablePadding="@dimen/size_10p"
+                        android:drawableRight="@drawable/detail_phone"
+                        android:gravity="center_vertical"
+                        android:text="023-11123597"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_end_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="网点地址"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_10p"
+                        android:drawablePadding="@dimen/size_20p"
+                        android:drawableRight="@drawable/detail_location"
+                        android:text="重庆市南岸区南坪街道网点阿萨德撒啊实打实"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/arrive_phone_msg_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10p"
+                    android:drawableLeft="@drawable/icon_time_s"
+                    android:drawablePadding="@dimen/size_4p"
+                    android:gravity="center_vertical"
+                    android:text="时效要求"
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size16"/>
+
+                <LinearLayout
+                    android:id="@+id/take_time"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="取件时间"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_10p"
+                        android:gravity="center_vertical"
+                        android:text="今日12点之前"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/send_time"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="送达时间"
+                        android:textColor="@color/font_black666"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_10p"
+                        android:gravity="center_vertical"
+                        android:text="今日12点之前"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size14"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr"
+                    style="@style/divier_style"
+                    android:layout_marginLeft="@dimen/size_22p"
+                    android:layout_marginRight="@dimen/size_10p"
+                    android:layout_marginTop="@dimen/size_10p"
+                    android:visibility="gone"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_10p"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size_10p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="原本单收益"
+                        android:textColor="@color/font_black333"
+                        android:textSize="@dimen/font_text_size18"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="¥20.00"
+                        android:textColor="@color/font_orange_red"
+                        android:textSize="@dimen/font_text_size18"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:text="(因自身原因造成单件丢失，将扣除部分收益作为惩罚)"
+                    android:textSize="@dimen/size_12p"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40p"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

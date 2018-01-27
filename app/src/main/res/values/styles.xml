@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <!-- 使用 API Level 22 編譯的話，要拿掉前綴字 -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarSize">@dimen/toolbar_size</item>
+        <item name="android:actionMenuTextColor">@color/font_black666</item>
+        <item name="actionMenuTextColor">@color/font_black666</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!--对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+    </style>
+
+    <!--分割线-->
+    <style name="divier_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/divier_color</item>
+    </style>
+
+    <!--分割线-->
+    <style name="dotted_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_2p</item>
+        <item name="android:background">@drawable/transfer_rec_item_hr</item>
+        <item name="android:layerType">software</item>
+    </style>
+
+    <!--确定按钮-->
+    <style name="commit_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_commit_btn_bg</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+    <style name="InputGroupCodeViewNumber" parent="AppTheme">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="InputGroupCodeViewLine" parent="AppTheme">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dark_gray</item>
+    </style>
+
+    <!--阴影-->
+    <style name="bg_shadow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/bg_shadow</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+    <style name="style333">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_black333</item>
+    </style>
+
+    <style name="styleGray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+
+    <style name="styleBlue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="styleYellow">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/bg_yellow</item>
+    </style>
+
+
+    <!--充值取消白屏问题-->
+    <style name="Theme.Mike" parent="AppSplash">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="AppSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 设置启动背景透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置启动不要Title -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="@dimen/size_10p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_12p">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#F76558"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重庆市南岸区--渝中区"
+                android:textColor="@color/font_black333"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4p"
+                android:drawableLeft="@drawable/icon_calendar_s"
+                android:drawablePadding="@dimen/size_4p"
+                android:gravity="center_vertical"
+                android:text="2017.06.03"
+                android:textColor="@color/font_gray"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4p"
+                android:drawableLeft="@drawable/icon_time_s"
+                android:drawablePadding="@dimen/size_4p"
+                android:gravity="center_vertical"
+                android:text="8点出发"
+                android:textColor="@color/font_gray"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_search"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

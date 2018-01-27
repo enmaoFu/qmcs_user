@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请绑定持卡人本人的银行卡"
+        android:textSize="@dimen/font_text_size14"
+        android:textColor="@color/font_gray"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_12p"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:background="@drawable/bg_lin_layout"
+        android:layout_marginTop="@dimen/size_12p">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50p">
+
+            <TextView
+                android:id="@+id/kh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡号"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_black333"/>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入您的银行卡号"
+                android:textColorHint="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_black333"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/kh"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:maxLength="19"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+        <View style="@style/divier_style"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50p">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_black333"/>
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入银行卡预留姓名"
+                android:textSize="@dimen/font_text_size16"
+                android:textColorHint="@color/font_gray"
+                android:textColor="@color/font_black333"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/name"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:maxLength="5"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本信息将加密处理，请放心填写"
+        android:textSize="@dimen/font_text_size14"
+        android:textColor="@color/font_gray"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_12p"/>
+
+    <TextView
+        android:id="@+id/text_but"
+        style="@style/commit_btn"
+        android:layout_marginBottom="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_20p"
+        android:text="确定"/>
+
+</LinearLayout>

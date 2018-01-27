@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/banner"
+            android:scaleType="fitXY"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:textColor="@color/white"
+              android:text="抢单成功"
+              android:drawableLeft="@drawable/icon_yes"
+              android:drawablePadding="@dimen/size_5p"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="@color/white"
+              android:text="请在30分钟内前往网点取件"
+              android:layout_marginTop="@dimen/size_5p"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:gravity="center"
+              android:background="@drawable/btn_deatil"
+              android:textColor="@color/white"
+              android:text="查看详情"
+              android:id="@+id/tv_go_detail"
+              android:layout_marginTop="@dimen/size_5p"
+              />
+
+
+
+       </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

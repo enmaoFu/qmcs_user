@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">全民传送</string>
+    <string name="send_tip">货物价值超过200元，享有\"货物保险\"服务</string>
+    <string name="max_kg">(最大不超过40kg)</string>
+    <string name="parseColor">#CCCCCC</string>
+    <string name="bgColor">#efeff4</string>
+    <string name="pwd_tip">登录密码至少8位</string>
+    <string name="pay_pwd_tip">支付密码为6位数字</string>
+    <string name="r_pwd_tip">请再次输入的密码至少8位</string>
+    <string name="r_pay_pwd_tip">请再次输入的6位支付密码</string>
+    <string name="pwd_not_same">两次密码不一致</string>
+    <string name="add_address_tip">请输入您的小区/大厦/学校</string>
+    <string name="go_start_tip">请输入您的出发地点</string>
+    <string name="go_end_tip">请输入您的到达地点</string>
+    <string name="deliver_close_tip">传送天使功能暂时被关闭</string>
+    <string name="no_data">暂时无数据，您可以下拉刷新试试</string>
+    <string name="no_transfer_tip">您还不是传送天使，是否立即前往申请?</string>
+    <string name="input_digits_QMCS">0123456789QMCS</string>
+    <string name="input_digits_QMWD">0123456789QMWD</string>
+    <string name="input_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+</resources>

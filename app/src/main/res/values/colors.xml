@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent1">#00000000</color>
+    <color name="colorPrimary">#30acf4</color>
+    <color name="colorPrimaryDark">#30acf4</color>
+    <color name="colorAccent">#30acf4</color>
+    <color name="white">#ffffff</color>
+    <color name="app_bg">#f4f4f4</color>
+    <color name="title_bg">#f9f9f9</color>
+    <color name="title_new_bg">#f9f9f9</color>
+    <color name="font_gray">#999999</color>
+    <color name="font_black666">#666666</color>
+    <color name="font_black333">#333333</color>
+    <color name="font_orange">#FF6804</color>
+    <color name="font_orange_red">#FF3300</color>
+    <color name="font_red">#F15344</color>
+    <color name="shen_blue">#52ace5</color>
+
+    <color name="font_hint">#bbbbbb</color>
+    <color name="divier_color">#e5e5e5</color>
+    <color name="yellow">#FFFF99</color>
+    <color name="bg_yellow">#FFAA33</color>
+    <color name="commit_btn">#148dc9</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="dark_gray">#a1a4a4</color>
+    <color name="gray_line">#dadada</color>
+
+</resources>

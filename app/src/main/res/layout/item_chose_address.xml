@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/size_6p"
+        android:paddingLeft="12dp"
+        android:paddingTop="@dimen/size_12p"
+        android:textColor="@color/font_black333"
+        android:textSize="16sp"
+        tools:text="合肥市"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/size_6p"
+        android:paddingLeft="12dp"
+        android:textColor="@color/font_black666"
+        android:textSize="14sp"
+        tools:text="合肥市"/>
+
+    <View
+        style="@style/divier_style"
+        android:layout_height="0.5dp"
+        />
+
+</LinearLayout>

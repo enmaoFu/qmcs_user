@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/title_bg"
+        android:layout_height="@dimen/toolbar_size">
+
+        <ImageView
+            android:id="@+id/returns"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/iconfont_houtui"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_20p"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            android:text="常用银行卡"
+            android:textSize="@dimen/font_text_size18"
+            android:textColor="@color/font_black333"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size_20p"
+            android:paddingRight="@dimen/size_12p"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/nav_add"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+    <include layout="@layout/ptr_recyclerview"></include>
+
+</LinearLayout>

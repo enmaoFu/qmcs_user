@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/title_bg"
+        android:minHeight="50dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:paddingEnd="0dp"
+        app:paddingStart="0dp"
+        app:title=" "
+        app:titleMarginStart="0dp"
+        app:titleTextColor="@color/font_black333"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size_5p"
+            android:paddingRight="@dimen/size_20p"
+            android:src="@drawable/nav_close"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/font_black333"
+            android:textSize="18sp"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40p"
+        android:text="当前定位城市"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:textColor="@color/font_black666"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40p"
+        android:text="@string/loading"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:background="@color/white"
+        android:id="@+id/tv_city"
+        android:textSize="@dimen/font_text_size16"
+        android:textColor="@color/font_black333"
+        />
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/indexableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:indexBar_background="@android:color/transparent"
+        app:indexBar_layout_width="24dp"
+        app:indexBar_selectedTextColor="@color/commit_btn"
+        app:indexBar_textColor="@color/commit_btn"
+        app:indexBar_textSize="14sp"
+        app:indexBar_textSpace="6dp"/>
+
+
+</LinearLayout>

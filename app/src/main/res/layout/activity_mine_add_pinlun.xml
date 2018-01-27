@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:layout_marginTop="@dimen/size_12p"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40p"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单编号"
+                    android:textColor="@color/font_black666"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableRight="@drawable/icon_check1"
+                    android:text="w34543645756858757645"
+                    android:textColor="@color/font_gray"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginTop="-1dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_white_round4"
+                android:orientation="vertical"
+                android:padding="@dimen/size_12p">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="综合评价"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <am.widget.drawableratingbar.DrawableRatingBar
+                        android:id="@+id/rb_all"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:drawablePadding="10dp"
+                        android:progressDrawable="@drawable/ratingbar_zhonghe_drawable"
+                        app:drbGravity="center"
+                        app:drbManually="true"
+                        app:drbMax="5"
+                        app:drbMin="1"
+                        app:drbOnlyItemTouchable="true"
+                        app:drbRating="5"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="非常好"
+                        android:textColor="@color/font_gray"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12p"
+                    android:background="@drawable/shape_white_stoke"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_12p">
+
+                    <EditText
+
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="top"
+                        android:hint="您对我们的服务还满意么？请留下您的宝贵评价帮助我们做得更好~"
+                        android:maxLength="100"
+                        android:minHeight="80dp"
+                        android:textColor="@color/font_black666"
+                        android:textColorHint="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/font_text_size14"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/icon_serivce"
+                    android:drawablePadding="5dp"
+                    android:text="服务评价"
+                    android:textColor="@color/font_black333"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_12p"
+                    android:paddingTop="@dimen/size_12p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取件时间"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <am.widget.drawableratingbar.DrawableRatingBar
+                        android:id="@+id/rb_time"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:drawablePadding="6dp"
+                        android:progressDrawable="@drawable/ratingbar_other_drawable"
+                        app:drbGravity="center"
+                        app:drbManually="true"
+                        app:drbMax="5"
+                        app:drbMin="1"
+                        app:drbOnlyItemTouchable="true"
+                        app:drbRating="5"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="非常好"
+                        android:textColor="@color/font_gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_12p"
+                    android:paddingTop="@dimen/size_12p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务态度"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <am.widget.drawableratingbar.DrawableRatingBar
+                        android:id="@+id/rb_server"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:drawablePadding="6dp"
+                        android:progressDrawable="@drawable/ratingbar_other_drawable"
+                        app:drbGravity="center"
+                        app:drbManually="true"
+                        app:drbMax="5"
+                        app:drbMin="1"
+                        app:drbOnlyItemTouchable="true"
+                        app:drbRating="5"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_server"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="非常好"
+                        android:textColor="@color/font_gray"
+                        />
+
+                </LinearLayout>
+                <!-- <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center_vertical"
+                     android:paddingBottom="@dimen/size_12p"
+                     android:paddingTop="@dimen/size_12p">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="快递费用"
+                         android:textColor="@color/font_black333"
+                        />
+
+                     <am.widget.drawableratingbar.DrawableRatingBar
+                         xmlns:app="http://schemas.android.com/apk/res-auto"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="20dp"
+                         android:drawablePadding="6dp"
+                         android:progressDrawable="@drawable/ratingbar_other_drawable"
+                         app:drbGravity="center"
+                         app:drbManually="true"
+                         app:drbMax="5"
+                         app:drbMin="1"
+                         app:drbOnlyItemTouchable="true"
+                         app:drbRating="4"/>
+
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:gravity="right"
+                         android:text="非常好"
+                         android:textColor="@color/font_gray"
+                         />
+
+                 </LinearLayout>-->
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_commit"
+                style="@style/commit_btn"
+                android:layout_marginTop="@dimen/size_30p"
+                android:text="提交评价"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40p"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

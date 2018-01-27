@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_10p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_white_round4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bule_round4"
+            android:paddingBottom="@dimen/size_12p">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mine_img"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/size_18p"
+                android:layout_marginLeft="@dimen/size_12p"
+                app:actualImageScaleType="centerCrop"
+                app:failureImage="@drawable/mine_avatar"
+                app:failureImageScaleType="centerCrop"
+                app:placeholderImage="@drawable/icon_jianshe3x"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundAsCircle="true">
+            </com.facebook.drawee.view.SimpleDraweeView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/mine_img"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/card_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建设银行"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/card_number_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="储蓄卡"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/size_8p"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_12p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="**** **** ****"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_size16"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/carde_number_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2345"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="@dimen/size_6p"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_round41">
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textSize="@dimen/font_text_size14"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_12p"
+                android:drawableLeft="@drawable/icon_trip_delete"
+                android:drawablePadding="@dimen/size_5p"
+                android:paddingBottom="@dimen/size_12p"
+                android:paddingTop="@dimen/size_12p"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"/>
+
+</LinearLayout>

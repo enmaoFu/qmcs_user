@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_20p"
+            android:src="@drawable/iconfont_houtui"
+            />
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/size_50p"
+            android:layout_toRightOf="@id/img_return"
+            android:layout_marginLeft="@dimen/size_20p"
+            android:background="@null"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:hint="请输入所在小区或附近建筑物"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/size_14p"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_data"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_camer"
+                    android:drawablePadding="@dimen/size_5p"
+                    android:text="证件上传"
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="请保证证件照上字迹清晰"
+                    android:textColor="@color/font_red"
+                    android:textSize="@dimen/font_text_size12"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12p">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/img_zhen"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/size_12p"
+                        android:visibility="gone"
+                        app:actualImageScaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/size_12p"
+                        android:id="@+id/ll_zhen"
+                        android:background="@drawable/divier_storke_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_image_front"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="请上传正面照"
+                            android:textColor="@color/font_gray"
+                            />
+
+                    </LinearLayout>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/img_fan"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        app:actualImageScaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_fan"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/divier_storke_bg"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_image_back"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="请上传反面照"
+                            android:textColor="@color/font_gray"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/size_12p"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/size_12p"
+                        android:id="@+id/ll_shou"
+                        android:background="@drawable/divier_storke_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_image_hand"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="请上传手持照"
+                            android:textColor="@color/font_gray"
+                            />
+
+                    </LinearLayout>
+
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/img_shou"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="0dp"
+                        android:layout_height="110dp"
+                        android:layout_marginRight="@dimen/size_12p"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        app:actualImageScaleType="centerCrop"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_12p"
+                    android:layout_marginTop="@dimen/size_12p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/font_red"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="上传前请先看样张"
+                        android:textColor="@color/font_black333"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_12p">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/exam_front"
+                            />
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/exam_back"
+                            />
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/exam_hand"
+                            />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_12p"
+                        android:text="如上图所示"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_12p"
+                        android:text="1.请保证图片焦点清晰，不可太小或模糊不清"
+                        android:textColor="@color/font_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_12p"
+                        android:text="2.请不要使用扫描件或复印件"
+                        android:textColor="@color/font_gray"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/size_12p"
+                android:text="在线学习"
+                android:id="@+id/tv_study"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_text_size16"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/size_12p"
+                android:id="@+id/Rl_commit"
+                android:layout_height="50dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/btn_progress"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交认证"
+                    android:id="@+id/tv_progress"
+                    android:textSize="@dimen/size_16p"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    </LinearLayout>

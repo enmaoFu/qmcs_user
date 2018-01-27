@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:id="@+id/ll_date"
+        android:paddingRight="@dimen/size_12p"
+        android:background="@drawable/shape_white_round4_stoke"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_calendar"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divier_color"
+            android:layout_marginTop="@dimen/size_10p"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:layout_marginLeft="@dimen/size_12p"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commit_btn_height"
+            android:text="请选择您的出发日期"
+            android:textColor="@color/font_gray"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:id="@+id/tv_date"
+            android:drawableRight="@drawable/icon_check1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:id="@+id/ll_time"
+        android:background="@drawable/shape_white_round4_stoke"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_time"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divier_color"
+            android:layout_marginTop="@dimen/size_10p"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:layout_marginLeft="@dimen/size_12p"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_time"
+            android:layout_height="@dimen/commit_btn_height"
+            android:text="请选择您的出发时间"
+            android:textColor="@color/font_gray"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:drawableRight="@drawable/icon_check1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:id="@+id/ll_start"
+        android:background="@drawable/shape_white_round4_stoke"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_go"
+            android:id="@+id/imageView3"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divier_color"
+            android:layout_marginTop="@dimen/size_10p"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:layout_marginLeft="@dimen/size_12p"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/commit_btn_height"
+            android:text="请选择您出发的省、市、区"
+            android:textColor="@color/font_gray"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:id="@+id/tv_start"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/size_10p"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:background="@color/font_gray"
+            android:id="@+id/v_diver"
+            android:layout_marginRight="@dimen/size_12p"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="定位当前"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/tv_location"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/icon_current_position"
+            android:textColor="@color/colorAccent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/shape_white_round4_stoke"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:text="@string/go_start_tip"
+        android:textColor="@color/font_gray"
+        android:id="@+id/tv_start_address"
+        android:layout_marginTop="@dimen/size_12p"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:id="@+id/ll_end"
+        android:paddingRight="@dimen/size_12p"
+        android:background="@drawable/shape_white_round4_stoke"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_arrive"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divier_color"
+            android:layout_marginTop="@dimen/size_10p"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:layout_marginLeft="@dimen/size_12p"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commit_btn_height"
+            android:text="请选择您到达的省、市、区"
+            android:textColor="@color/font_gray"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:id="@+id/tv_end"
+            android:drawableRight="@drawable/icon_check1"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/shape_white_round4_stoke"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:text="@string/go_end_tip"
+        android:textColor="@color/font_gray"
+        android:layout_marginTop="@dimen/size_12p"
+        android:id="@+id/tv_end_address"
+       />
+    <TextView
+        style="@style/commit_btn"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_25p"
+        android:text="发布"
+        android:id="@+id/tv_commit"
+        />
+
+</LinearLayout>

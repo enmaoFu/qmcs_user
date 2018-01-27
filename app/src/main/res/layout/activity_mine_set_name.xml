@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+    <View
+        android:layout_marginTop="@dimen/size_12p"
+       style="@style/divier_style"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@color/white"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:id="@+id/et_name"
+        android:maxLength="12"
+        android:hint="请输入您的昵称"
+        android:textSize="@dimen/font_text_size16"
+        android:textColorHint="@color/font_hint"
+        />
+    <View
+        style="@style/divier_style"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_gray"
+        android:text="长度限制：2-12个字"
+        android:layout_margin="@dimen/size_12p"
+        />
+</LinearLayout>
